@@ -61,7 +61,7 @@ class SkillAnalyzer:
                 input=(
                     "你是一個專業的遊戲技能描述分析師，擅長發現技能描述中的問題。\n\n" + prompt
                 ),
-                max_output_tokens=2000,
+                max_output_tokens=4000,
             )
             analysis_text = getattr(response, "output_text", None)
             if not analysis_text:
