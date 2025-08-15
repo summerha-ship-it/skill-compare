@@ -1,0 +1,38 @@
+🎮 遊戲技能描述對比分析工具 - 啟動說明
+
+📋 快速啟動步驟：
+
+1. 確保您在 skilltranslation 目錄中
+2. 使用虛擬環境中的 Python 啟動應用：
+   ..\\.venv\Scripts\python.exe run.py
+
+3. 在瀏覽器中訪問：
+   http://localhost:5000
+
+4. 輸入您的 OpenAI API Key（格式：sk-...）
+
+5. 輸入舊版本和新版本的技能描述
+
+6. 點擊「開始分析」按鈕
+
+7. 查看分析結果並保存
+
+📁 文件說明：
+- app.py：主應用程序
+- run.py：啟動腳本
+- test_setup.py：環境測試腳本
+- example_skills.txt：示例技能描述
+- requirements.txt：Python依賴
+- README.md：詳細說明文檔
+
+⚠️ 注意事項：
+- 需要有效的 OpenAI API Key
+- 需要網路連接
+- 分析會產生 API 費用
+
+🔧 故障排除：
+如果遇到問題，請運行：
+..\\.venv\Scripts\python.exe test_setup.py
+
+📞 技術支持：
+如有問題，請聯繫開發團隊。

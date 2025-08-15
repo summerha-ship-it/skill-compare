@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: skill-compare
+    env: docker
+    plan: free
+    autoDeploy: true
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: FLASK_DEBUG
+        value: "0"
+
