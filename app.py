@@ -25,7 +25,7 @@ class SkillAnalyzer:
 新版本描述：
 {new_description}
 
-請進行以下分析，並使用清晰的格式：
+請進行以下分析，並盡量簡潔：
 
 1. 內容一致性檢查：
    - 兩個版本的技能內容是否相同？
@@ -39,7 +39,6 @@ class SkillAnalyzer:
    - 語句是否通順？
    - 是否有語法錯誤？
 
-
 請以簡潔化的方式回答，使用以下格式：
 - 對於通過的項目使用 ✅ 符號
 - 對於需要注意的項目使用 ⚠️ 符號
@@ -51,7 +50,7 @@ class SkillAnalyzer:
             response = self.client.responses.create(
                 model="gpt-5-mini",
                 input=(
-                    "你是一個專業的遊戲技能描述分析師，擅長發現技能描述中的問題。\n\n" + prompt
+                    "你是一個專業的神魔之塔遊戲技能描述分析師，擅長發現技能描述中的問題。\n\n" + prompt
                 ),
                 max_output_tokens=4000,
             )
